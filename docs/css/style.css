@@ -251,6 +251,25 @@ html {
     transition: background-color 0.3s ease;
     grid-column: 1/3;
 }
+.color{
+    grid-column: 1/3;
+    row-gap: 2rem;
+}
+.cantidad{
+    grid-column: 1/3;
+
+}
+@media (min-width: 768px) {
+    .color{
+        grid-column: 1/2;
+        row-gap: 2rem;
+    }
+    .cantidad{
+        grid-column: 2/3;
+    
+    }
+    
+}
 /* agregar cursor al submit */
 .formulario__submit:hover{
     cursor: pointer;
