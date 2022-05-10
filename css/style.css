@@ -175,6 +175,10 @@ html {
 .nosotros{
     display: grid;
     grid-template-columns: repeat(1,auto);
+   
+}
+.nosotros__contenido{
+    justify-content: space-around;
 }
 @media (min-width: 768px) {
     .nosotros{
@@ -254,16 +258,52 @@ html {
     background-color: var(--secundarioOscuro);
 }
 
+.mision__titulo,
+.vision__titulo,
+.filosofia__titulo{
+    margin-top: 0%;
+    margin-bottom: 0%;
+
+}
 .mision,
 .vision,
 .filosofia{
    display: grid;
    grid-template-columns:repeat(1,auto) ;
+   gap:2rem;
 }
 
+.nosotros__contenido,
+.mision__contenido,
+.vision__contenido,
+.filosofia__contenido{
+   text-align: justify;
+}
 
 .mision__imagen,
 .vision__imagen,
 .filosofia__imagen{
+    
     grid-row: 1/2;
+}
+
+@media (min-width: 768px) {
+    
+    .mision__contenido,
+    .vision__contenido
+    {
+    
+        grid-template-columns: repeat(2,1fr);
+        /* separación entre elementos de grid */
+       gap: 2rem;
+       grid-row: 1/2;
+    }
+    .mision__imagen,
+    .vision__imagen{
+        grid-column:2/3;
+    }
+ 
+}
+.filosofia{
+    margin: 0;
 }
