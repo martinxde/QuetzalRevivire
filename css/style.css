@@ -41,6 +41,8 @@ html {
   /* contenedor para centrar el contenido */
   .contenedor{
       max-width: 120rem;
+      /*agregarle separación en los bordes del contenido*/
+      width: 95%; /*fin*/
       margin: 0 auto;
   }
   h1,h2,h3{
@@ -250,4 +252,18 @@ html {
 .formulario__submit:hover{
     cursor: pointer;
     background-color: var(--secundarioOscuro);
+}
+
+.mision,
+.vision,
+.filosofia{
+   display: grid;
+   grid-template-columns:repeat(1,auto) ;
+}
+
+
+.mision__imagen,
+.vision__imagen,
+.filosofia__imagen{
+    grid-row: 1/2;
 }
